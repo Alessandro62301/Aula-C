@@ -5,19 +5,22 @@
 
 
 int main(){
-	
-	/*lista * ini_lista;
+	int resp;
+	lista * ini_lista;
 	lista * proximo_lista;
 	
 	ini_lista = (lista*)malloc(sizeof(lista*));
-	if(ini_lista == NULL)
-		exit(1);
-
-	
 	proximo_lista = ini_lista;
+
+	// if(ini_lista == NULL)
+	// 	exit(1);
 	
-	while(1){
+	printf("Deseja continuar 1<sim> 2<nao>.");
+	scanf("%d",&resp);
+	if(resp == 1){
 		
+	while(1){
+		resp =0;
 		printf("Insira um valor:");
 		scanf("%d",&proximo_lista->valor);
 		printf("Deseja continuar 1<sim> 2<nao>.");
@@ -28,42 +31,45 @@ int main(){
 		}else
 			break;
 	}
-	
-
-
-
 	proximo_lista->proximo = NULL;
 	proximo_lista = ini_lista;
-
-	*/
-    //  while(proximo_lista != NULL){
-    //      printf("valor : %d \n",proximo_lista->valor);
-    //      proximo_lista = proximo_lista->proximo;
-    // }
-
-    //remove();
-    // cont =  tamanho(ini_lista);
-    // printf("TAMANHO == %d\n",cont);
-    // imprime(ini_lista);
-    // int pos = buscar(ini_lista,1);
-    // printf("POSICAO == %D \n",pos);
-    // int pegarGet = get(ini_lista,3);
-    // printf("GET == %d \n",pegarGet);
-	add(10,0);
-	add(20,1);
-	add(30,2);
-	add(50,3);
-	remover(0);
-	imprimir();
-	int getElem = get(0);
-	printf("GET == %d \n",getElem);
-	int buc = buscar(50);
-	printf("POSICAO == %D \n",buc);
-	escreverArquivo();
-
-
+	}
+	else{
+	}
 	
+
+   
+	
+	
+
+
+	//int buc = buscar(ini_lista,1);
+	//printf("POSICAO == %D \n",buc);
+
+	//	int cont = retira(&ini_lista,4);
+	//	printf("o  valor retirado foi %d \n",cont);
+
+	//addlista(ini_lista,50,0);2
+	//ordenar(ini_lista);
+	//empilha(ini_lista,150);
+	//desempilha(&ini_lista);
+	//imprimir(ini_lista);
+	//escreverArquivo(ini_lista);
+	//topo(ini_lista);
+	//lerArquivo(ini_lista);
+	//desempilha(&ini_lista);
+	// enfileirar(ini_lista,10);
+	// enfileirar(ini_lista,20);
+	// enfileirar(ini_lista,30);
+	// enfileirar(ini_lista,40);
+	// enfileirar(ini_lista,50);
+	//desenfileira(&ini_lista);
+	lerArquivoFila(ini_lista);
+	imprimir(ini_lista);
+	//int tam = tamanho(ini_lista);
+	//printf("tamanho = %d \n",tam);
+
+
  
 	return 0;
-	
 }
